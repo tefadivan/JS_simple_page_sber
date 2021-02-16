@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Form, Button, Navbar, Nav, FormControl, NavItem} from "react-bootstrap";
-
+import {Navbar, Nav, NavItem} from "react-bootstrap";
 import {Link, Route, Switch} from "react-router-dom";
+
 import Home from '../Home/Home'
 import Movies from '../Movies/Movies'
 import Profile from "../Profile/Profile";
