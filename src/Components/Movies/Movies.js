@@ -1,11 +1,22 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 
-export default class Home extends React.Component{
+export default class Movies extends React.Component{
     render(){
         return(
-            <div className="Movies">
+            <div className="movies">
                 <h2>Фильмы</h2>
+                <ul className="d-flex-row">
+                    <li>
+                        Фильм №1
+                    </li>
+                    <li>
+                        Фильм №2
+                    </li>
+                    <li>
+                        Фильм №3
+                    </li>
+                </ul>
             </div>
         );
     }

@@ -5,11 +5,11 @@ export default class Profile extends React.Component{
     render(){
         if (!this.props.isLogged){
             return(
-                <Login/>
+                <Login onLogging={this.props.onLogging}/>
             );
         }
         return(
-            <div className="Profile">
+            <div className="profile">
                 <h2>Профиль</h2>
             </div>
         );
