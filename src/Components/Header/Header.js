@@ -30,7 +30,7 @@ export default class Header extends Component {
                         <Route exact path='/' component={Home} />
                         <Route exact path='/movies' component={Movies} />
                         <Route exact path='/profile' render={()=>{return(
-                            <Profile isLogged={this.props.isLogged}/>)
+                            <Profile isLogged={this.props.isLogged} onLogging={this.props.onLogging}/>)
                             }
                         } />
                     </Switch>
