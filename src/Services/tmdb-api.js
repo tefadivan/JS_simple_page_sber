@@ -2,6 +2,7 @@ export default class tmdbApi{
     constructor() {
         this.baseUrl = 'https://api.themoviedb.org/3/movie/';
         this.apiKey = '?api_key=3e02319f0f5cca64a9821ef1961a6e97';
+        this.maxID = 100;
     }
 
     async getResource(url){
@@ -15,7 +16,8 @@ export default class tmdbApi{
     }
     _transformMovie(movie) {
         return {
-            title: movie.original_title
+            title: movie.original_title,
+            id: this.maxID++
         };
     }
 }

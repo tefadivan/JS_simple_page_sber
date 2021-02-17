@@ -13,24 +13,26 @@ export default class Movies extends React.Component{
     }
 
     onMovieLoaded = (movie) => {
-        this.setState(()=>{
-            this.state.movies.push(movie);
-        } );
+        this.setState((state) =>{
+            return {movies: [...state.movies, movie]};
+        })
     };
 
     updateMovies(){
         for (let i = 0; i < 15; ++i){
             const id = Math.floor(Math.random() * (550 - 100) + 100);
-            this.api.getMovie(id).then(this.onMovieLoaded);
+            this.api.getMovie(id).then((body) => {
+                if(body.title){
+                    this.onMovieLoaded(body);
+                }
+            });
         }
     }
 
     render(){
-        console.log("in render");
-        console.log(this.state.movies);
-        const elements = this.state.movies.map(({title}) => {
+        const elements = this.state.movies.map(({title,id}) => {
             return (
-                <li className="list-group-item">
+                <li className="list-group-item" key={id}>
                     {title}
                 </li>
             );
