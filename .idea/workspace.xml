@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf651f4-8832-4cfb-afc7-ca13ffd35830" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/tmdb-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/Components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movies/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-=======
->>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/src/Services/tmdb-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/tmdb-api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +66,9 @@
       <workItem from="1613470777367" duration="1329000" />
       <workItem from="1613500407624" duration="1585000" />
       <workItem from="1613550537295" duration="13430000" />
+      <workItem from="1613582198842" duration="43000" />
+      <workItem from="1613582446712" duration="1914000" />
+      <workItem from="1613584402199" duration="364000" />
     </task>
     <servers />
   </component>
