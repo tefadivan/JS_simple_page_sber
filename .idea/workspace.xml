@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf651f4-8832-4cfb-afc7-ca13ffd35830" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Movies/Movies.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movies/Movies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/tmdb-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/tmdb-api.js" afterDir="false" />
@@ -15,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -31,6 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,8 +46,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tefad\OneDrive\Документы\GitHub\JS_simple_page_sber\src\Components\Profile" />
       <recent name="C:\Users\tefad\OneDrive\Документы\GitHub\JS_simple_page_sber\src\Components\Movies" />
+      <recent name="C:\Users\tefad\OneDrive\Документы\GitHub\JS_simple_page_sber\src\Components\Profile" />
       <recent name="C:\Users\tefad\OneDrive\Документы\GitHub\JS_simple_page_sber\src\Components\Login" />
       <recent name="C:\Users\tefad\OneDrive\Документы\GitHub\JS_simple_page_sber\src\Components\Home" />
       <recent name="C:\Users\tefad\OneDrive\Документы\GitHub\JS_simple_page_sber\src\Components\Header" />
@@ -69,6 +72,7 @@
       <workItem from="1613582198842" duration="43000" />
       <workItem from="1613582446712" duration="1914000" />
       <workItem from="1613584402199" duration="364000" />
+      <workItem from="1613725245845" duration="7656000" />
     </task>
     <servers />
   </component>
