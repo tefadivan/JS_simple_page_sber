@@ -31,7 +31,10 @@ export default class tmdbApi{
     }
     _transformMovie(movie) {
         return {
-            title: movie.original_title,
+            title: movie.title,
+            posterPath: movie.poster_path,
+            releaseDate: movie.release_date,
+            overview: movie.overview,
             id: this.maxID++
         };
     }

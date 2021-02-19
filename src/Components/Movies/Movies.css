@@ -1,0 +1,27 @@
+h2{
+    text-align: center;
+}
+
+.list-movies{
+    display: flex;
+}
+
+.list-movies-item{
+    box-shadow: 2px 1px 8px 5px grey;
+    width: 29.99999%;
+    display: flex;
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.list-movies-item img {
+    border-radius: 15px;
+    max-width: 360px;
+    max-height: 800px;
+}
+
+.list-movies-item .title {
+    font-weight: bold;
+}

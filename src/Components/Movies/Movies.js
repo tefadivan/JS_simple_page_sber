@@ -1,5 +1,8 @@
 import React from 'react'
 import tmdbApi from "../../Services/tmdb-api";
+import './Movies.css'
+import noPosterAvailable from "./no-poster-available.jpg"
+
 export default class Movies extends React.Component{
     api = new tmdbApi();
 
@@ -19,8 +22,14 @@ export default class Movies extends React.Component{
     };
 
     updateMovies(){
+        const availableID = [];
         for (let i = 0; i < 15; ++i){
-            const id = Math.floor(Math.random() * (550 - 100) + 100);
+            let id = 0;
+
+            do {
+                id = Math.floor(Math.random() * (550 - 0) + 0);
+            } while(availableID.includes(id));
+
             this.api.getMovie(id).then((body) => {
             //this.api.getTopPopularMovies().then((body) => {
             //this.api.getPosterMovie(id).then((body) => {
@@ -37,10 +46,24 @@ export default class Movies extends React.Component{
     }
 
     render(){
-        const elements = this.state.movies.map(({title,id}) => {
+        const elements = this.state.movies.map(({title,posterPath,releaseDate, overview,id}) => {
+            const pathToImage = posterPath ? "https://image.tmdb.org/t/p/w500" + posterPath : noPosterAvailable;
             return (
-                <li className="list-group-item" key={id}>
-                    {title}
+                <li className="list-movies-item" key={id}>
+                    <div className="movie-item d-flex-row justify-content-between">
+                        <div className="poster">
+                            <img src={pathToImage} alt=""/>
+                        </div>
+                        <div className="title">
+                            {title}
+                        </div>
+                        <div className="release-date">
+                            {releaseDate}
+                        </div>
+                        <div className="overview d-flex-row">
+                            {overview}
+                        </div>
+                    </div>
                 </li>
             );
         })
@@ -48,7 +71,7 @@ export default class Movies extends React.Component{
         return(
             <div className="movies">
                 <h2>Список фильмов</h2>
-                <ul className="list-group d-flex-row">
+                <ul className="list-movies d-flex-row flex-wrap">
                     {elements}
                 </ul>
             </div>
