@@ -2,7 +2,6 @@ export default class tmdbApi{
     constructor() {
         this.baseUrl = 'https://api.themoviedb.org/3/movie/';
         this.apiKey = '?api_key=3e02319f0f5cca64a9821ef1961a6e97';
-//<<<<<<< HEAD
         this.basePosterUrl = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2';
         // ok :
         // https://api.themoviedb.org/3/movie/100?api_key=3e02319f0f5cca64a9821ef1961a6e97
@@ -15,9 +14,7 @@ export default class tmdbApi{
 
         // images - http://image.tmdb.org/t/p/
         // https://www.themoviedb.org/t/p/w600_and_h900_bestv2/57vIJPRNsBZUAKu0jkt8QrA3tXI.jpg - full, ok
-//=======
         this.maxID = 100;
-//>>>>>>> 03267caeef81e6aa4561b56228d78a67b2cda390
     }
 
     async getResource(url){
@@ -46,15 +43,4 @@ export default class tmdbApi{
             this.baseUrl + "discover/movie?sort_by=popularity.desc" + this.apiKey);
         return this._transformMovie(movie);
     }
-
-    async getPosterMovie(id){
-        const posterMovie = await this.getResource( this.basePosterUrl + id + this.apiKey);
-        return this._transformPosterMovie(posterMovie);
-    }
-    _transformPosterMovie(posterMovie) {
-        return {
-            poster: posterMovie.poster_path
-        };
-    }
-
 }

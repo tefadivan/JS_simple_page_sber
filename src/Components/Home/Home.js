@@ -58,8 +58,6 @@ export default class Home extends React.Component{
                 </ul>
 
             </div>
-
-
         );
     }
 }
