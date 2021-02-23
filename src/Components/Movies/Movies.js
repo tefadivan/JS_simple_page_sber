@@ -31,10 +31,17 @@ export default class Movies extends React.Component{
             } while(availableID.includes(id));
 
             this.api.getMovie(id).then((body) => {
+            //this.api.getTopPopularMovies().then((body) => {
+            //this.api.getPosterMovie(id).then((body) => {
                 if(body.title){
                     this.onMovieLoaded(body);
                 }
             });
+
+            //this.api.getPosterMovie(id).then((body) => {
+                    //this.onMovieLoaded(body);
+            //});
+
         }
     }
 
