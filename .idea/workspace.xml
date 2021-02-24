@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf651f4-8832-4cfb-afc7-ca13ffd35830" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movies/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Movies/no-poster-available.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movies/no-poster-available.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/tmdb-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/tmdb-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Movies/Movies.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movies/Movies.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
